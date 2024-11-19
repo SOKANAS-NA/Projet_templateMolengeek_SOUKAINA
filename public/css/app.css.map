@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/sass/modules/_navbar.sass"],"names":[],"mappings":"AAEA;EACI;EACA","file":"app.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/sass/_variables.sass","../../src/sass/modules/_navbar.sass"],"names":[],"mappings":"AAAA;ACAA;AAEA;EACI;EACA;;;AAEJ;EACI,ODLY;ECMZ","file":"app.css"}
