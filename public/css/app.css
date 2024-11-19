@@ -1,13 +1,19 @@
 /*je prend les couleurs exactes de color Picker*/
 /* Je commence tout d'abord par donner du style dans ma barre de navigation */
 #navbarNav {
-  margin-left: 50%;
+  margin-left: 30%;
   color: white;
+  font-weight: bold;
 }
 
 .point {
   color: #1a72ea;
   font-size: 50px;
+}
+
+.navbar-brand {
+  margin-left: 15%;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=app.css.map */
