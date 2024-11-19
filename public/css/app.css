@@ -1,4 +1,12 @@
 /*je prend les couleurs exactes de color Picker*/
+.custom-style-1 {
+  background-image: url(../../public/img/hero-bg.jpg);
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
 /* Je commence tout d'abord par donner du style dans ma barre de navigation */
 #navbarNav {
   margin-left: 30%;
