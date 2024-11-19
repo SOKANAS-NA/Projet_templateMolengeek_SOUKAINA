@@ -1,11 +1,11 @@
-/* Error: Expected expression.
- *   ,
- * 4 |     color:
- *   |           ^
- *   '
- *   src\sass\modules\_navbar.sass 4:11  @import
- *   src\sass\modules\_style.sass 4:9    @import
- *   src\sass\app.sass 6:9               root stylesheet */
+/* Error: Undefined variable.
+ *    ,
+ * 18 |         background-color: $after-color
+ *    |                           ^^^^^^^^^^^^
+ *    '
+ *   src\sass\modules\_header.sass 18:27  @import
+ *   src\sass\modules\_style.sass 1:9     @import
+ *   src\sass\app.sass 6:9                root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 4 \2502      color:\d\a   \2502            ^\a   \2575 \a   src\\sass\\modules\\_navbar.sass 4:11  @import\a   src\\sass\\modules\\_style.sass 4:9    @import\a   src\\sass\\app.sass 6:9               root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 18 \2502          background-color: $after-color\d\a    \2502                            ^^^^^^^^^^^^\a    \2575 \a   src\\sass\\modules\\_header.sass 18:27  @import\a   src\\sass\\modules\\_style.sass 1:9     @import\a   src\\sass\\app.sass 6:9                root stylesheet";
 }
