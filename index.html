@@ -11,9 +11,10 @@
 <body>
      <!-- Première chose à faire j'installe tout le set up nécessaire pour élaborer mon project comme vu en classe -->
      <!--Je créé depuis Bootstrap une barre de navigation que je modifie dans le sass grace au # donne par Bootstrap-->
+   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">MOLENGEEK<span class="point">.</span></a>
+        <div class="container-fluid costum-style-2"> <!--j utilse le selecteur costume style pour personnalier le css dans le sass-->
+          <a class="navbar-brand pt-0" href="#">MOLENGEEK<span class="point">.</span></a>
           
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -27,18 +28,35 @@
                 <a class="nav-link" href="#">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Services</a>
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="container-fluid custom-style-1 justify-content-center align-items-center">
+        <div class="container text-start">
+       <h1>Welcome to <span class="blue">Molengeek</span></h1>
+       <h5 class="grey">Mon prject du vendredi</h5>
+       <button type="button" class="btn btn-primary">GET STARTED</button>
+    </div>
+      </div>
+
+
+
+    </header>
+
+
+
+
+
+  
 
 
 
