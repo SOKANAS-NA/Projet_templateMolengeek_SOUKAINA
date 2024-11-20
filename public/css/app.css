@@ -33,6 +33,15 @@
   color: #747778;
 }
 
+.costum-style-4 {
+  position: relative;
+  top: -150px;
+}
+.costum-style-4 .custom-card {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  height: 250px;
+}
+
 /* Je commence tout d'abord par donner du style dans ma barre de navigation */
 #navbarNav {
   margin-left: 30%;
