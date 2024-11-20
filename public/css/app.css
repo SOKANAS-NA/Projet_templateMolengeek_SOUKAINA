@@ -81,17 +81,31 @@
 }
 
 .icon {
-  background-color: black;
+  background-color: #f1f6fe;
   position: relative;
   width: 50px;
   height: 50px;
-  border: 1px solid blue;
+  border: 0.5px solid #106eea;
 }
 .icon i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.custom-badge {
+  background-color: #e7f1fd;
+  color: #1a72ea;
+  font-weight: bold;
+  width: 20%;
+  height: 5vh;
+  align-content: center;
+}
+
+.custom-card-1 {
+  height: 20rem;
+  border-color: #eaf3fd;
 }
 
 /* Je commence tout d'abord par donner du style dans ma barre de navigation */
