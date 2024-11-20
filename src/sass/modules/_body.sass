@@ -4,7 +4,59 @@
     position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut//
     top: -150px
 
+    .custom-badge
+        background-color: $button-color
+        color: $primary-color
+        font-weight: bold
+        width: 20%
+       
+        
+
     .custom-card
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
-        
         height: 250px
+.card-body
+    text-align: left
+    margin-top: 40px
+    flex-direction: column
+    gap: 1.5em
+
+#carouselExample
+    position: relative
+    overflow: hidden
+    &::after//l'after est utilsé pour créer l'overlay sur l'image de fond//
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height:100%
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 1   
+        pointer-events: none
+
+    .custom-class-5
+        position: absolute
+        bottom: 200px //POUR DEPLACER LE TEXTE EN HAUT//auto
+        z-index: 2
+        
+
+        h1
+            color: $primary-color
+            margin-bottom: 5%
+    
+.custom-style-7
+     
+.icon 
+    background-color: black
+    position: relative
+    width: 50px
+    height: 50px 
+    border: 1px solid blue
+    i
+        position: absolute
+        top: 50%
+        left:50%
+        transform: translate(-50%, -50%)
+        
+        
