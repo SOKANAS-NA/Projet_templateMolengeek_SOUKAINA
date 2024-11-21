@@ -1,54 +1,19 @@
-/*je prend les couleurs exactes de color Picker*/
-.custom-style-1 {
-  background-image: url(../../public/img/hero-bg.jpg);
-  background-size: cover;
-  position: relative;
-  height: 70vh;
-  display: flex;
-  width: 100%;
-  margin-bottom: 200px;
-}
-.custom-style-1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 1;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 8 |             background-color: $button-color
+ *   |                               ^^^^^^^^^^^^^
+ *   '
+ *   src\sass\modules\_body.sass 8:31  @import
+ *   src\sass\modules\_style.sass 2:9  @import
+ *   src\sass\app.sass 6:9             root stylesheet */
 
-.container {
-  position: absolute;
-  z-index: 2;
-  margin-top: 10%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 8 \2502              background-color: $button-color\d\a   \2502                                ^^^^^^^^^^^^^\a   \2575 \a   src\\sass\\modules\\_body.sass 8:31  @import\a   src\\sass\\modules\\_style.sass 2:9  @import\a   src\\sass\\app.sass 6:9             root stylesheet";
 }
-
-.blue {
-  color: #1a72ea;
-}
-
-.grey {
-  color: #747778;
-}
-
-/* Je commence tout d'abord par donner du style dans ma barre de navigation */
-#navbarNav {
-  margin-left: 30%;
-  color: white;
-  font-weight: bold;
-  padding-top: 1%;
-}
-
-.point {
-  color: #1a72ea;
-  font-size: 50px;
-}
-
-.navbar-brand {
-  margin-left: 15%;
-  font-weight: bold;
-}
-
-/*# sourceMappingURL=app.css.map */
