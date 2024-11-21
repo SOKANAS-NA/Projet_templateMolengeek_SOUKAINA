@@ -2,29 +2,33 @@
 
 .costum-style-4
     position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut//
-    top: -150px
+    top: -100px
 
     .custom-badge
-        background-color: $button-color
-        color: $primary-color
-        font-weight: bold
-        width: 10%
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 15%
+            height: 5vh
+            align-content: center
        
-        
+.custom-style-3
+    height: 15em     //arrangement de la taille de la grande div afin qu elle contient mieux les autres div//
 
     .custom-card
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
-        height: 250px
-.card-body
+       
+       
+.card-body 
     text-align: left
     margin-top: 40px
     flex-direction: column
     gap: 1.5em
 
-#carouselExample
+#carouselExample //UTILISATION DE POSITION RELATIVE ET ABSOLUTE AFIN DE POSTIONNER LE TEXTE AU CENTRE DE L IMAGE//
     position: relative
     overflow: hidden
-    &::after//l'after est utilsé pour créer l'overlay sur l'image de fond//
+    &::after //l'after est utilsé pour créer l'overlay sur l'image de fond//
         content: ''
         position: absolute
         top: 0
@@ -37,15 +41,15 @@
 
     .custom-class-5
         position: absolute
-        bottom: 200px //POUR DEPLACER LE TEXTE EN HAUT//auto
+        bottom: 250px //POUR DEPLACER LE TEXTE EN HAUT//auto
         z-index: 2
         
 
-        h1
+        h2
             color: $primary-color
-            margin-bottom: 5%
+            margin-bottom: 2%
     
-.custom-style-7
+
      
 .icon 
     background-color: #f1f6fe
@@ -57,37 +61,64 @@
         position: absolute
         top: 50%
         left:50%
-        transform: translate(-50%, -50%)
-.custom-badge
-        background-color: $button-color
-        color: $primary-color
-        font-weight: bold
-        width: 10%
-        height: 5vh
-        align-content: center
+        transform: translate(-50%, -50%)//pour bien positionner mon icone au centre//
+
 .custom-card-1
     height:20rem
     border-color: #eaf3fd
 
-.card
-    min-height: 350px
+    .card
+        min-height: 1rem //taille des cartes//
     
     .card-body
         display: flex
         flex-direction: column
         justify-content: space-between
-
+.custom-style-7
+        .custom-badge
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 15%
+            height: 5vh
+            align-content: center
 .custom-style-8
     background-color: #f6f9fe
+    .custom-badge
+        background-color: $button-color
+        color: $primary-color
+        font-weight: bold
+        width: 15%
+        height: 5vh
+        align-content: center
+    
+    
     .card
-         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+      
 
 .custom-style-10
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
     background-color: blue
     align-content: center
+.custom-style-8
+    .custom-badge
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 15%
+            height: 5vh
+            align-content: center
 
+    .custom-badge
+
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 20%
+            height: 4vh
+            align-content: center
+        
     
-.custom-height-card
-    height: 2px !important
+
 

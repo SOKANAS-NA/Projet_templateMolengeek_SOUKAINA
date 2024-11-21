@@ -36,17 +36,22 @@
 
 .costum-style-4 {
   position: relative;
-  top: -150px;
+  top: -100px;
 }
 .costum-style-4 .custom-badge {
   background-color: #e7f1fd;
   color: #1a72ea;
   font-weight: bold;
-  width: 10%;
+  width: 15%;
+  height: 5vh;
+  align-content: center;
 }
-.costum-style-4 .custom-card {
+
+.custom-style-3 {
+  height: 15em;
+}
+.custom-style-3 .custom-card {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  height: 250px;
 }
 
 .card-body {
@@ -73,12 +78,12 @@
 }
 #carouselExample .custom-class-5 {
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   z-index: 2;
 }
-#carouselExample .custom-class-5 h1, #carouselExample .custom-class-5 .h1 {
+#carouselExample .custom-class-5 h2, #carouselExample .custom-class-5 .h2 {
   color: #1a72ea;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .icon {
@@ -95,31 +100,38 @@
   transform: translate(-50%, -50%);
 }
 
-.custom-badge {
-  background-color: #e7f1fd;
-  color: #1a72ea;
-  font-weight: bold;
-  width: 10%;
-  height: 5vh;
-  align-content: center;
-}
-
 .custom-card-1 {
   height: 20rem;
   border-color: #eaf3fd;
 }
-
-.card {
-  min-height: 350px;
+.custom-card-1 .card {
+  min-height: 1rem;
 }
-.card .card-body {
+.custom-card-1 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.custom-style-7 .custom-badge {
+  background-color: #e7f1fd;
+  color: #1a72ea;
+  font-weight: bold;
+  width: 15%;
+  height: 5vh;
+  align-content: center;
+}
+
 .custom-style-8 {
   background-color: #f6f9fe;
+}
+.custom-style-8 .custom-badge {
+  background-color: #e7f1fd;
+  color: #1a72ea;
+  font-weight: bold;
+  width: 15%;
+  height: 5vh;
+  align-content: center;
 }
 .custom-style-8 .card {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -131,8 +143,21 @@
   align-content: center;
 }
 
-.custom-height-card {
-  height: 2px !important;
+.custom-style-8 .custom-badge {
+  background-color: #e7f1fd;
+  color: #1a72ea;
+  font-weight: bold;
+  width: 15%;
+  height: 5vh;
+  align-content: center;
+}
+.custom-style-8 .custom-badge {
+  background-color: #e7f1fd;
+  color: #1a72ea;
+  font-weight: bold;
+  width: 20%;
+  height: 4vh;
+  align-content: center;
 }
 
 /* Je commence tout d'abord par donner du style dans ma barre de navigation */
