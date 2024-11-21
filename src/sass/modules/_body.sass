@@ -1,0 +1,154 @@
+.costum-style-4
+    position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut//
+    top: -100px
+    span
+        color: #116eea
+    .custom-badge
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 10%
+            height: 4vh
+            align-content: center
+            span
+                font-weight: 10px
+
+       
+.custom-style-3
+    height: 15em     //arrangement de la taille de la grande div afin qu elle contient mieux les autres div//
+
+    .custom-card
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+       
+       
+.card-body 
+    text-align: left
+    margin-top: 40px
+    flex-direction: column
+    gap: 1.5em
+
+#carouselExample //UTILISATION DE POSITION RELATIVE ET ABSOLUTE AFIN DE POSTIONNER LE TEXTE AU CENTRE DE L IMAGE//
+    position: relative
+    overflow: hidden
+    &::after //l'after est utilsé pour créer l'overlay sur l'image de fond//
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height:100%
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 1   
+        pointer-events: none
+
+    .custom-class-5
+        position: absolute
+        bottom: 9em //POUR DEPLACER LE TEXTE EN HAUT//auto
+        z-index: 2
+        
+
+        h2
+            color: $primary-color
+            margin-bottom: 2%
+    
+
+     
+.icon 
+    background-color: #f1f6fe
+    position: relative
+    width: 50px
+    height: 50px 
+    border: 0.5px solid  #106eea
+    i
+        position: absolute
+        top: 50%
+        left:50%
+        transform: translate(-50%, -50%)//pour bien positionner mon icone au centre//
+
+.custom-card-1
+    height:20rem
+    border-color: #eaf3fd
+
+    .card
+        min-height: 1rem //taille des cartes//
+    
+    .card-body
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+.custom-style-7
+        .custom-badge
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 13%
+            height: 4vh
+            align-content: center
+            span
+                font-size: 15px
+          
+#a
+    color:  #116eea
+#b
+    color:  #116eea               
+.custom-style-8
+    background-color: #f6f9fe
+    div
+        .custom-badge
+            background-color: $button-color
+            color: $primary-color
+            font-weight: bold
+            width: 5%
+            height: 4vh
+            align-content: center
+            span
+                font-size: 15px
+        
+    
+    .card
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+
+.custom-style-9
+    .custom-badge
+        background-color: $button-color
+        color: $primary-color
+        font-weight: bold
+        width: 5%
+        height: 4vh
+        align-content: center 
+        span
+            font-size: 15px
+    h2
+        color:  #106eea 
+        font-weight: bold   
+
+
+.custom-style-11
+    background-color: #fdfdfd
+    .card
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)  
+
+
+
+.custom-card-9
+    align-content: center
+    justify-content: center
+    align-items: center
+    display: flex
+    flex-direction: column 
+     //j'ai mis le contenu en display flex colomn afin de le centrer au milieu de la div parent//
+    h4,p
+        color: #a3a3a3
+        font-weight: bold
+    
+    .round
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80px
+        height: 80px
+        border: 1px dashed  #106eea //dashed pour l effet en pointille//
+        border-radius: 50%
+       
+    .blue
+        color:  #106eea
