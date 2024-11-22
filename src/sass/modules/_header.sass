@@ -1,12 +1,12 @@
 .custom-style-1
     background-image: url(../../public/img/hero-bg.jpg)
     background-size: cover
-    position: relative //^positionnement de relatif au parent pour travailler le style de l image//
+    position: relative //^positionnement de relatif au parent pour ppostionner l after a l interieur du conatiner//
     height: 70vh 
-    display: flex
+    display: flex //FACILITER L ALIGNEMENT ET LA DISPOSITION DE L ELEMENT ENFANT//
     width: 100%
     margin-bottom: 200px
-    &::after //l'after est utilsé pour créer l'overlay sur l'image de fond//
+    &::after //l'after est utilsé pour créer l'overlay sur l'image de fond pour donner un effet de transparance//
         content: ''
         position: absolute
         top: 0
@@ -16,8 +16,8 @@
         background-color: $after-color
         z-index: 1
 .container
-    position: absolute
-    z-index: 2
+    position: absolute //AFIN DE POSITIONNER LES ELEMENTS ENFANTS DANS LE PARENT//
+    z-index: 2 //VISIBILITE DU CONTENU//
     margin-top: 10%
    
     

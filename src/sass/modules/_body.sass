@@ -1,5 +1,5 @@
 .costum-style-4
-    position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut//
+    position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut DANS LA DIV PARENT//
     top: -100px
     span
         color: #116eea
@@ -12,13 +12,14 @@
             align-content: center
             span
                 font-weight: 10px
-    @media screen and (max-width: 768px) 
+    @media screen and (max-width: 768px)
         .custom-style-3 
             flex-direction: column
             flex-wrap: wrap
-            gap: 2px
-            align-content: space-around
-  
+            align-content: center
+            max-width: 20px
+       
+//FIN SECTION FEATURED SERVICES// 
 
             
            
@@ -37,6 +38,8 @@
     flex-direction: column
     gap: 1.5em
 
+//DEBUT CAROUSEL//
+
 #carouselExample //UTILISATION DE POSITION RELATIVE ET ABSOLUTE AFIN DE POSTIONNER LE TEXTE AU CENTRE DE L IMAGE//
     position: relative
     overflow: hidden
@@ -49,8 +52,7 @@
         height:100%
         background-color: rgba(0, 0, 0, 0.5)
         z-index: 1   
-        pointer-events: none
-
+        
     .custom-class-5
         position: absolute
         bottom: 9em //POUR DEPLACER LE TEXTE EN HAUT//auto
@@ -60,9 +62,10 @@
         h2
             color: $primary-color
             margin-bottom: 2%
-    
+//FIN CAROUSEL///import css-variables from 
+   
 
-     
+//SECTION SERVICES//     
 .icon 
     background-color: #f1f6fe
     position: relative
@@ -99,8 +102,11 @@
           
 #a
     color:  #116eea
+//  
+///SECTION TEAM//   
 #b
-    color:  #116eea               
+    color:  #116eea 
+           
 .custom-style-8
     background-color: #f6f9fe
     div
@@ -114,9 +120,12 @@
             span
                 font-size: 15px
         
-    
+   
     .card
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+    //FIN SECTION TEAM//
+    
+    //SECTION CONTACT//
 
 .custom-style-9
     .custom-badge
@@ -131,6 +140,7 @@
     h2
         color:  #106eea 
         font-weight: bold   
+
 
 
 .custom-style-11
@@ -162,3 +172,7 @@
        
     .blue
         color:  #106eea
+        
+        
+        
+        //FIN//

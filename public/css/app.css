@@ -56,8 +56,8 @@
   .costum-style-4 .custom-style-3 {
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2px;
-    align-content: space-around;
+    align-content: center;
+    max-width: 20px;
   }
 }
 
@@ -88,7 +88,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  pointer-events: none;
 }
 #carouselExample .custom-class-5 {
   position: absolute;
