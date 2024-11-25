@@ -23,7 +23,7 @@
 .container {
   position: absolute;
   z-index: 2;
-  margin-top: 10%;
+  margin-bottom: -5%;
 }
 
 .blue {
@@ -34,38 +34,26 @@
   color: #747778;
 }
 
-.costum-style-4 {
-  position: relative;
-  top: -100px;
+.custom-style-4 {
+  margin-top: -10em;
 }
-.costum-style-4 span {
+.custom-style-4 span {
   color: #116eea;
 }
-.costum-style-4 .custom-badge {
+.custom-style-4 .custom-badge {
   background-color: #e7f1fd;
   color: #1a72ea;
   font-weight: bold;
-  width: 10%;
-  height: 4vh;
+  width: 12em;
+  height: 2.5em;
   align-content: center;
 }
-.costum-style-4 .custom-badge span {
+.custom-style-4 .custom-badge span {
   font-weight: 10px;
 }
-@media screen and (max-width: 768px) {
-  .costum-style-4 .custom-style-3 {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    max-width: 20px;
-  }
-}
 
-.custom-style-3 {
-  height: 15em;
-}
-.custom-style-3 .custom-card {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+.custom-style-3 .card .custom-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.01);
 }
 
 .card-body {
@@ -78,6 +66,7 @@
 #carouselExample {
   position: relative;
   overflow: hidden;
+  margin-top: 5em;
 }
 #carouselExample::after {
   content: "";
@@ -86,8 +75,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
+}
+@media (max-width: 768px) {
+  #carouselExample #carouselExample {
+    position: relative;
+  }
+  #carouselExample .custom-class-5 {
+    position: absolute;
+  }
 }
 #carouselExample .custom-class-5 {
   position: absolute;
@@ -130,8 +127,8 @@
   background-color: #e7f1fd;
   color: #1a72ea;
   font-weight: bold;
-  width: 13%;
-  height: 4vh;
+  width: 8em;
+  height: 2.5em;
   align-content: center;
 }
 .custom-style-7 .custom-badge span {
@@ -153,23 +150,29 @@
   background-color: #e7f1fd;
   color: #1a72ea;
   font-weight: bold;
-  width: 5%;
-  height: 4vh;
+  width: 10em;
+  height: 2em;
   align-content: center;
 }
 .custom-style-8 div .custom-badge span {
   font-size: 15px;
 }
-.custom-style-8 .card {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
 
+@media (max-width: 378px) {
+  .custom-style-8 {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+}
 .custom-style-9 .custom-badge {
   background-color: #e7f1fd;
   color: #1a72ea;
   font-weight: bold;
-  width: 5%;
-  height: 4vh;
+  width: 10em;
+  height: 2em;
   align-content: center;
 }
 .custom-style-9 .custom-badge span {
@@ -187,27 +190,37 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.custom-card-9 {
+.card {
+  margin: 0rem;
+}
+.card .card-body {
+  padding: 0.7rem;
+  text-align: center;
+}
+.card .custom-card-9 {
   align-content: center;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.custom-card-9 h4, .custom-card-9 .h4, .custom-card-9 p {
-  color: #a3a3a3;
-  font-weight: bold;
-}
-.custom-card-9 .round {
+.card .custom-card-9 .round {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border: 1px dashed #106eea;
   border-radius: 50%;
+  margin-bottom: 0.1rem;
 }
-.custom-card-9 .blue {
+.card .custom-card-9 .round h4, .card .custom-card-9 .round .h4, .card .custom-card-9 .round p {
+  color: #a3a3a3;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+  margin-bottom: 0;
+}
+.card .custom-card-9 .round .blue {
   color: #106eea;
 }
 
@@ -217,19 +230,57 @@
 }
 
 #navbarNav {
-  margin-left: 30%;
+  margin-left: 30em;
   color: white;
   font-weight: bold;
   padding-top: 1%;
 }
 
+@media (max-width: 1024px) {
+  #navbarNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+  }
+  .navbar-brand {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  #navbarNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+  }
+  .navbar-brand {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 378px) {
+  .navbar-brand {
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
 .point {
   color: #1a72ea;
   font-size: 50px;
 }
 
 .navbar-brand {
-  margin-left: 15%;
+  margin-left: 14em;
   font-weight: bold;
 }
 

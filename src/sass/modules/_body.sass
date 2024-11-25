@@ -1,35 +1,29 @@
-.costum-style-4
-    position: relative //j'etais obligé de faire une postions relative afin de déplacer le big container en haut DANS LA DIV PARENT//
-    top: -100px
+.custom-style-4
+    margin-top: -10em
+    
+ 
     span
-        color: #116eea
+            color: #116eea
     .custom-badge
             background-color: $button-color
             color: $primary-color
             font-weight: bold
-            width: 10%
-            height: 4vh
+            width: 12em //JE TRAVAILLE DE PLUS EN PLUS AVEC DES EM CAR DANS LE RESPONSIVE CELA DONNE MIEUX//
+            height: 2.5em
             align-content: center
             span
                 font-weight: 10px
-    @media screen and (max-width: 768px)
-        .custom-style-3 
-            flex-direction: column
-            flex-wrap: wrap
-            align-content: center
-            max-width: 20px
+
+            
        
 //FIN SECTION FEATURED SERVICES// 
 
             
-           
-
-       
+                 
 .custom-style-3
-    height: 15em     //arrangement de la taille de la grande div afin qu elle contient mieux les autres div//
-
-    .custom-card
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+    .card
+        .custom-card
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.01)
        
        
 .card-body 
@@ -43,6 +37,7 @@
 #carouselExample //UTILISATION DE POSITION RELATIVE ET ABSOLUTE AFIN DE POSTIONNER LE TEXTE AU CENTRE DE L IMAGE//
     position: relative
     overflow: hidden
+    margin-top: 5em
     &::after //l'after est utilsé pour créer l'overlay sur l'image de fond//
         content: ''
         position: absolute
@@ -50,8 +45,13 @@
         left: 0
         width: 100%
         height:100%
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.7) //0,7 donne un effet plus sombre sur l overlay//
         z-index: 1   
+    @media (max-width: 768px) 
+        #carouselExample
+            position: relative
+        .custom-class-5
+            position: absolute
         
     .custom-class-5
         position: absolute
@@ -94,8 +94,8 @@
             background-color: $button-color
             color: $primary-color
             font-weight: bold
-            width: 13%
-            height: 4vh
+            width: 8em
+            height: 2.5em
             align-content: center
             span
                 font-size: 15px
@@ -114,26 +114,30 @@
             background-color: $button-color
             color: $primary-color
             font-weight: bold
-            width: 5%
-            height: 4vh
+            width: 10em
+            height: 2em
             align-content: center
             span
                 font-size: 15px
+@media (max-width: 378px) 
+    .custom-style-8
+        display: flex
+        flex-direction: column
         
    
     .card
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
-    //FIN SECTION TEAM//
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+//FIN SECTION TEAM//
     
-    //SECTION CONTACT//
+//SECTION CONTACT//
 
 .custom-style-9
     .custom-badge
         background-color: $button-color
         color: $primary-color
         font-weight: bold
-        width: 5%
-        height: 4vh
+        width: 10em
+        height: 2em
         align-content: center 
         span
             font-size: 15px
@@ -148,31 +152,40 @@
     .card
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)  
 
+.card
+    margin:0rem
+    .card-body
+        padding: 0.7rem
+        text-align: center
 
-
-.custom-card-9
-    align-content: center
-    justify-content: center
-    align-items: center
-    display: flex
-    flex-direction: column 
-     //j'ai mis le contenu en display flex colomn afin de le centrer au milieu de la div parent//
-    h4,p
-        color: #a3a3a3
-        font-weight: bold
-    
-    .round
-        display: flex
+    .custom-card-9
+        align-content: center
         justify-content: center
         align-items: center
-        width: 80px
-        height: 80px
-        border: 1px dashed  #106eea //dashed pour l effet en pointille//
-        border-radius: 50%
-       
-    .blue
-        color:  #106eea
-        
+        display: flex //j'ai mis le contenu en display flex colomn afin de le centrer au milieu de la div parent//
+        flex-direction: column 
+     
+    
+    
+        .round
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            border: 1px dashed  #106eea //dashed pour l effet en pointille//
+            border-radius: 50%
+            margin-bottom: 0.1rem
+            h4,p
+                color: #a3a3a3
+                font-weight: bold
+                margin-bottom: 0.1rem
+            h4
+                margin-bottom: 0 
+                
+            .blue
+                color:  #106eea
+                    
         
         
         //FIN//
